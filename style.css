@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --b-key-width: 55%;
+  --w-key-width:5%;
+  /* --right-position: calc((var(--w-key-width)/4)*100); */
+}
+body{
+  background-color: #FEF6E4;
+}
+
+
+
+.piano-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border: 5px solid #232946;
+  width: 90vw;
+  height: 57vh;
+  border-radius: 1rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.key {
+  /* width: 10%; */
+  width: var(--w-key-width);
+  height: 10rem;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 2px 2px 10px 0px #ccc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+ 
+}
+
+.white-key {
+  border: 3px solid #010425;
+  background-color: #fff;
+  transition: 0.2s all;
+  position: relative;
+  
+}
+
+.white-active,
+.white-key:hover {
+  background-color: rgb(95, 116, 115);
+  border-bottom: none;
+ 
+}
+
+.black-key {
+  background: rgb(36, 32, 30);
+  
+  background: linear-gradient(
+    180deg,
+    rgba(36, 32, 30, 1) 26%,
+    rgba(79, 82, 71, 1) 86%
+  );
+  height: 7rem;
+  width: var(--b-key-width);
+  position: absolute;
+  top: 1px;
+  right: -15px;
+  /* right: ; */
+  transition: 0.2s all;
+  z-index: 1;
+}
+
+
+
+.black-key:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(36, 32, 30, 1) 26%,
+    rgba(136, 173, 33) 86%
+  );
+
+  transform: translateY(20px);
+}
+
+.black-key:active {
+  background: linear-gradient(
+    180deg,
+    rgba(36, 32, 30, 1) 26%,
+    rgb(164, 164, 164) 86%
+  );
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .black-key{
+    --b-key-width:60%;
+    right: -13px;
+
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+  .black-key{
+    --b-key-width:70%;
+    right: -11px;
+
+  }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 821px) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  body{
+    width: 90%;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .piano-container{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+   
+  }
+  .key{
+    height: 50%;
+  }
+  .black-key{
+    --b-key-width:70%;
+    right: -13px;
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  body{
+    width: 90%;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .piano-container{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+   
+  }
+  .key{
+    height: 50%;
+  }
+  .black-key{
+    --b-key-width:70%;
+    right: -10px;
+
+  }
+}
