@@ -18,7 +18,7 @@ whiteKeys.forEach((white, index) => {
 function playSound(sound) {
   sound.pause();
   sound.currentTime = 0;
-  sound.play();
+  sound.play();U
 }
 
 // Add keys
@@ -199,5 +199,74 @@ addEventListener("keydown", (e) => {
   if (e.key === "/") {
     twentyone.classList.add("white-active");
     playSound(new Audio("./sounds/white-keys/20.mp3"));
+  }
+
+
+  //Black Key
+
+
+  if (e.key === "q") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/0.mp3"));
+  }
+  if (e.key === "w") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/1.mp3"));
+  }
+  if (e.key === "e") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/2.mp3"));
+  }
+  if (e.key === "r") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/3.mp3"));
+  }
+  if (e.key === "t") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/4.mp3"));
+  }
+  if (e.key === "y") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/5.mp3"));
+  }
+  if (e.key === "u") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/6.mp3"));
+  }
+  if (e.key === "i") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/7.mp3"));
+  }
+
+  if (e.key === "o") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/8.mp3"));
+  }
+
+  if (e.key === "p") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/9.mp3"));
+  }
+  
+  if (e.key === "0") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/10.mp3"));
+  }
+  
+  if (e.key === "9") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/11.mp3"));
+  }
+  if (e.key === "8") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/12.mp3"));
+  }
+  if (e.key === "7") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/13.mp3"));
+  }
+  if (e.key === "6") {
+    // twentyone.classList.add("white-active");
+    playSound(new Audio("./sounds/black-keys/14.mp3"));
   }
 });
