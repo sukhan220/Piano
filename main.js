@@ -18,7 +18,7 @@ whiteKeys.forEach((white, index) => {
 function playSound(sound) {
   sound.pause();
   sound.currentTime = 0;
-  sound.play();U
+  sound.play();
 }
 
 // Add keys
