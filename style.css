@@ -67,12 +67,17 @@ body{
   );
   height: 7rem;
   width: var(--b-key-width);
+  color: #ccc;
   position: absolute;
   top: 1px;
   right: -15px;
   /* right: ; */
   transition: 0.2s all;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 8px;
 }
 
 
